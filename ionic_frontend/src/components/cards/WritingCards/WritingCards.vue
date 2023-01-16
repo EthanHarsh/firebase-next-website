@@ -4,7 +4,7 @@
       <ion-row class="ion-align-items-start">
         <ion-col>
           <ion-card
-            class="writing-card outer-radius no-shadow light-border animate__animated animate__fadeIn"
+            class="writing-card ion-padding outer-radius no-shadow light-border animate__animated animate__fadeIn"
           >
             <ion-card-header
               color="secondary"
