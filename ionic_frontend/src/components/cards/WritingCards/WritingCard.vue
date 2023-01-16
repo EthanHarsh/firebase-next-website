@@ -62,6 +62,6 @@ export default defineComponent({
 
 <style scoped>
 .card-img {
-  width: 100%;
+  width: 100% !important;
 }
 </style>

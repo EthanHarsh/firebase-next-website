@@ -65,3 +65,8 @@ export default defineComponent({
   },
 });
 </script>
+<style scoped>
+.card-img {
+  width: 100% !important;
+}
+</style>
