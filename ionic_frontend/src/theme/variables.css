@@ -1,8 +1,17 @@
 /* Ionic Variables and Theming. For more info, please see:
 http://ionicframework.com/docs/theming/ */
-
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400&family=Roboto+Mono:wght@100;200;300;400&display=swap');
 /** Ionic CSS Variables **/
+@font-face {
+  font-family: 'Futura PT';
+  src: url('assets/Futura.rar') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
+  /** font **/
+  --ion-font-family: 'M PLUS Rounded 1c', sans-serif;
   /** primary **/
   --ion-color-primary: #3880ff;
   --ion-color-primary-rgb: 56, 128, 255;
@@ -88,6 +97,14 @@ http://ionicframework.com/docs/theming/ */
   border-radius: var(--inner-radius) !important;
 }
 
+.headline {
+  font-family: 'Future PT', sans-serif;
+}
+
+.mono {
+  font-family: 'Roboto Mono', monospace;
+}
+
 @media (prefers-color-scheme: dark) {
   /*
    * Dark Colors
@@ -158,6 +175,10 @@ http://ionicframework.com/docs/theming/ */
     --ion-color-light-contrast-rgb: 255,255,255;
     --ion-color-light-shade: #1e2023;
     --ion-color-light-tint: #383a3e;
+  }
+
+  .button {
+    font-family: 'Roboto Mono', monospace;
   }
 
   /*

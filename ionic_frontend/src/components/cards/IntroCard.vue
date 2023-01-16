@@ -11,8 +11,8 @@
       </figure>
     </ion-card-content>
     <ion-card-header color="primary">
-      <ion-card-subtitle>Hello,</ion-card-subtitle>
-      <ion-card-title>My name is Ethan.</ion-card-title>
+      <ion-card-subtitle class="headline">Hello,</ion-card-subtitle>
+      <ion-card-title class="headline">My name is Ethan.</ion-card-title>
     </ion-card-header>
     <ion-card-content class="ion-margin-top">
       <ion-grid class="ion-margin">

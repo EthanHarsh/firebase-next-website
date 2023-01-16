@@ -1,5 +1,5 @@
 <template>
-  <div v-if="mobileChange">
+  <div v-if="mobileChange" class="squeeze">
     <div v-for="repo of projects" :key="repo.name">
       <project-card-mobile-change
         :language="repo.language"
@@ -7,10 +7,11 @@
         :description="repo.description"
         :url="repo.url"
         :id="repo.id"
+        class="spread-out"
       />
     </div>
   </div>
-  <div v-else>
+  <div v-else class="squeeze">
     <ion-row>
       <ion-col size="4" v-for="repo of projects" :key="repo.language">
         <project-card
@@ -51,3 +52,14 @@ export default defineComponent({
   },
 });
 </script>
+
+<style scoped>
+.squeeze {
+  padding-right: 5rem;
+  padding-left: 5rem;
+}
+
+.spread-out {
+  margin-bottom: 2rem;
+}
+</style>

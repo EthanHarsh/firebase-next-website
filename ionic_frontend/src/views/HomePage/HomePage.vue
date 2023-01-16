@@ -2,13 +2,13 @@
   <ion-page>
     <ion-header>
       <ion-toolbar>
-        <ion-title>{{ title }}</ion-title>
+        <ion-title class="headline">{{ title }}</ion-title>
       </ion-toolbar>
     </ion-header>
     <ion-content :fullscreen="true">
       <ion-header collapse="condense">
         <ion-toolbar>
-          <ion-title size="large">{{ title }}</ion-title>
+          <ion-title size="large" class="headline">{{ title }}</ion-title>
         </ion-toolbar>
       </ion-header>
       <ion-grid class="ion-margin-top">
@@ -62,8 +62,8 @@
         </ion-row>
         <ion-row>
           <div class="ion-padding ion-margin">
-            <h1>Recent Writing</h1>
-            <ion-card-subtitle class="ion-padding-left"
+            <h1 class="headline indent">Recent Writing</h1>
+            <ion-card-subtitle class="ion-padding-left headline indent"
               >Ideas I'm thinking about</ion-card-subtitle
             >
           </div>
@@ -71,58 +71,8 @@
         <writing-cards-section :articles="articles" />
         <ion-row>
           <div class="ion-padding ion-margin animate__animated animate__fadeIn">
-            <h1>Future Skills</h1>
-            <ion-card-subtitle class="ion-padding-left"
-              >Subjects I'm currently studying</ion-card-subtitle
-            >
-          </div>
-        </ion-row>
-        <ion-row class="ion-padding ion-margin ion-justify-content-center">
-          <div class="outer-radius no-overflow">
-            <ion-accordion-group
-              :multiple="true"
-              :value="['first']"
-              class="future-acc"
-            >
-              <ion-accordion value="first">
-                <ion-item slot="header" color="light">
-                  <ion-label>Functional Programming</ion-label>
-                </ion-item>
-                <div class="ion-padding content-background" slot="content">
-                  {{ homeCopy.futureSkills.functionalProgramming }}
-                </div>
-              </ion-accordion>
-              <ion-accordion value="second">
-                <ion-item slot="header" color="light">
-                  <ion-label>Haskell</ion-label>
-                </ion-item>
-                <div class="ion-padding content-background" slot="content">
-                  {{ homeCopy.futureSkills.haskell }}
-                </div>
-              </ion-accordion>
-              <ion-accordion value="third">
-                <ion-item slot="header" color="light">
-                  <ion-label>Clarity</ion-label>
-                </ion-item>
-                <div class="ion-padding content-background" slot="content">
-                  {{ homeCopy.futureSkills.clarity }}
-                </div>
-              </ion-accordion>
-              <ion-accordion value="fourth">
-                <ion-item slot="header" color="light">
-                  <ion-label>JsLIGO</ion-label>
-                </ion-item>
-                <div class="ion-padding content-background" slot="content">
-                  {{ homeCopy.futureSkills.jsLigo }}
-                </div>
-              </ion-accordion>
-            </ion-accordion-group>
-          </div>
-        </ion-row>
-        <ion-row>
-          <div class="ion-padding ion-margin animate__animated animate__fadeIn">
-            <h1>Coding Projects</h1>
-            <ion-card-subtitle class="ion-padding-left"
+            <h1 class="headline indent">Coding Projects</h1>
+            <ion-card-subtitle class="ion-padding-left headline indent"
               >Past & Current Projects</ion-card-subtitle
             >
           </div>
@@ -145,10 +95,6 @@ import {
   IonContent,
   IonCardSubtitle,
   IonIcon,
-  IonAccordionGroup,
-  IonAccordion,
-  IonItem,
-  IonLabel,
 } from "@ionic/vue";
 import { business, school, build } from "ionicons/icons";
 import { functions } from "@/constants/firebase";
@@ -173,10 +119,6 @@ export default defineComponent({
     IonIcon,
     WritingCardsSection,
     ProjectCardSection,
-    IonAccordionGroup,
-    IonAccordion,
-    IonItem,
-    IonLabel,
     IntroCard,
   },
   data() {
@@ -234,16 +176,15 @@ export default defineComponent({
   margin-top: 32px;
 }
 
-.future-acc {
-  width: 66vw !important;
-  border-radius: var(--outer-radius);
-}
-
 .no-overflow {
   overflow: hidden;
 }
 
 .content-background {
   background: var(--ion-color-step-200);
+}
+
+.indent {
+  margin-left: 2.5rem;
 }
 </style>
