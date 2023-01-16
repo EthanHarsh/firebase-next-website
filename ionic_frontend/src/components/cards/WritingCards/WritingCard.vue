@@ -1,5 +1,7 @@
 <template>
-  <ion-card class="writing-card outer-radius no-shadow light-border">
+  <ion-card
+    class="writing-card ion-padding outer-radius no-shadow light-border"
+  >
     <ion-card-header
       color="secondary"
       class="ion-margin ion-padding inner-radius"
