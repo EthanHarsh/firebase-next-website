@@ -2,26 +2,26 @@
   <ion-page>
     <ion-header>
       <ion-toolbar>
-        <ion-title>{{ title }}</ion-title>
+        <ion-title class="headline">{{ title }}</ion-title>
       </ion-toolbar>
     </ion-header>
     <ion-content :fullscreen="true">
       <ion-header collapse="condense">
         <ion-toolbar>
-          <ion-title size="large">{{ title }}</ion-title
+          <ion-title size="large" class="headline">{{ title }}</ion-title
           >"
         </ion-toolbar>
       </ion-header>
       <ion-grid class="animate__animated animate__fadeIn">
         <ion-row>
           <ion-col size="12" class="header-img">
-            <h1 class="header-title">What's next?</h1>
+            <h1 class="header-title headline">What's next?</h1>
             <img v-bind="headerAttr" />
           </ion-col>
         </ion-row>
         <ion-row class="ion-padding item finished">
           <div>
-            <h1>Recent Writing Optimization</h1>
+            <h1 class="headline">Recent Writing Optimization</h1>
             <p>
               Data fetching associated with getting featured Github Projects and
               recently written Medium articles is the main cause of loading
@@ -31,7 +31,7 @@
         </ion-row>
         <ion-row class="ion-padding item finished">
           <div>
-            <h1>Featured Projects Optimization</h1>
+            <h1 class="headline">Featured Projects Optimization</h1>
             <p>
               Data fetching associated with getting featured Github Projects and
               recently written Medium articles is the main cause of loading
@@ -41,7 +41,7 @@
         </ion-row>
         <ion-row class="ion-padding item finished">
           <div>
-            <h1>
+            <h1 class="headline">
               Generalize/Optimize checkFeaturedRepos & checkRssFeed functions
             </h1>
             <p>
@@ -52,13 +52,13 @@
         </ion-row>
         <ion-row class="ion-padding item finished">
           <div>
-            <h1>Build Unit Tests for Cloud Functions</h1>
+            <h1 class="headline">Build Unit Tests for Cloud Functions</h1>
             <p>Write a unit testing suite for Google Cloud Functions.</p>
           </div>
         </ion-row>
         <ion-row class="ion-padding item">
           <div>
-            <h1>CI/CD Pipeline</h1>
+            <h1 class="headline">CI/CD Pipeline</h1>
             <p>
               Build a CI/CD pipeline. The pipeline needs to automatically test
               and deploy new cloud functions as well as test, build, and deploy
@@ -68,7 +68,9 @@
         </ion-row>
         <ion-row class="ion-padding item">
           <div>
-            <h1>Optimize Data Delivery From Cloud Functions</h1>
+            <h1 class="headline">
+              Optimize Data Delivery From Cloud Functions
+            </h1>
             <p>
               Implement GZIP compression and other techniques to optimize data
               delivery from cloud functions.
@@ -89,7 +91,7 @@
         -->
         <ion-row class="ion-padding item">
           <div>
-            <h1>Roadmap Automation</h1>
+            <h1 class="headline">Roadmap Automation</h1>
             <p>
               My roadmap is currently contained within a Google Sheet. I would
               like to integrate the sheet to automatically update the roadmap

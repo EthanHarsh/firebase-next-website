@@ -2,13 +2,13 @@
   <ion-page>
     <ion-header>
       <ion-toolbar>
-        <ion-title>{{ title }}</ion-title>
+        <ion-title class="headline">{{ title }}</ion-title>
       </ion-toolbar>
     </ion-header>
     <ion-content :fullscreen="true">
       <ion-header collapse="condense">
         <ion-toolbar>
-          <ion-title size="large">{{ title }}</ion-title>
+          <ion-title size="large" class="headline">{{ title }}</ion-title>
         </ion-toolbar>
       </ion-header>
       <ion-grid class="ion-margin-top">
@@ -62,8 +62,8 @@
         </ion-row>
         <ion-row>
           <div class="ion-padding ion-margin">
-            <h1>Recent Writing</h1>
-            <ion-card-subtitle class="ion-padding-left"
+            <h1 class="headline">Recent Writing</h1>
+            <ion-card-subtitle class="ion-padding-left headline"
               >Ideas I'm thinking about</ion-card-subtitle
             >
           </div>
@@ -71,8 +71,8 @@
         <writing-cards-section :articles="articles" />
         <ion-row>
           <div class="ion-padding ion-margin animate__animated animate__fadeIn">
-            <h1>Coding Projects</h1>
-            <ion-card-subtitle class="ion-padding-left"
+            <h1 class="headline">Coding Projects</h1>
+            <ion-card-subtitle class="ion-padding-left headline"
               >Past & Current Projects</ion-card-subtitle
             >
           </div>
