@@ -62,8 +62,8 @@
         </ion-row>
         <ion-row>
           <div class="ion-padding ion-margin">
-            <h1 class="headline">Recent Writing</h1>
-            <ion-card-subtitle class="ion-padding-left headline"
+            <h1 class="headline indent">Recent Writing</h1>
+            <ion-card-subtitle class="ion-padding-left headline indent"
               >Ideas I'm thinking about</ion-card-subtitle
             >
           </div>
@@ -71,8 +71,8 @@
         <writing-cards-section :articles="articles" />
         <ion-row>
           <div class="ion-padding ion-margin animate__animated animate__fadeIn">
-            <h1 class="headline">Coding Projects</h1>
-            <ion-card-subtitle class="ion-padding-left headline"
+            <h1 class="headline indent">Coding Projects</h1>
+            <ion-card-subtitle class="ion-padding-left headline indent"
               >Past & Current Projects</ion-card-subtitle
             >
           </div>
@@ -182,5 +182,9 @@ export default defineComponent({
 
 .content-background {
   background: var(--ion-color-step-200);
+}
+
+.indent {
+  margin-left: 2.5rem;
 }
 </style>

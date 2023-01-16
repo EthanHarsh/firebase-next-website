@@ -1,5 +1,5 @@
 <template>
-  <div v-if="mobileChange">
+  <div v-if="mobileChange" class="squeeze">
     <div v-for="article of articles" :key="article.id">
       <writing-card-mobile-change
         :pubDate="article.pubDate"
@@ -10,7 +10,7 @@
       />
     </div>
   </div>
-  <div v-else>
+  <div v-else class="squeeze">
     <ion-row class="ion-justify-content-center">
       <ion-col size="4" v-for="article of articles" :key="article.id">
         <writing-card
@@ -50,7 +50,8 @@ export default defineComponent({
 </script>
 
 <style scoped>
-.card-img {
-  width: 100%;
+.squeeze {
+  padding-right: 5rem;
+  padding-left: 5rem;
 }
 </style>

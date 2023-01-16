@@ -177,6 +177,10 @@ http://ionicframework.com/docs/theming/ */
     --ion-color-light-tint: #383a3e;
   }
 
+  .button {
+    font-family: 'Roboto Mono', monospace;
+  }
+
   /*
    * iOS Dark Theme
    * -------------------------------------------

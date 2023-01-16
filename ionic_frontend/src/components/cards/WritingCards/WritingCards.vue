@@ -1,10 +1,10 @@
 <template>
   <div v-if="mobileChange">
     <div v-for="article of articles" :key="article.id">
-      <ion-row class="ion-align-items-start ion-padding ion-margin">
+      <ion-row class="ion-align-items-start">
         <ion-col>
           <ion-card
-            class="ion-padding ion-margin writing-card outer-radius no-shadow light-border animate__animated animate__fadeIn"
+            class="writing-card outer-radius no-shadow light-border animate__animated animate__fadeIn"
           >
             <ion-card-header
               color="secondary"
@@ -39,9 +39,7 @@
   <div v-else>
     <ion-row class="ion-justify-content-center">
       <ion-col size="4" v-for="article of articles" :key="article.id">
-        <ion-card
-          class="ion-padding ion-margin writing-card outer-radius no-shadow light-border"
-        >
+        <ion-card class="writing-card outer-radius no-shadow light-border">
           <ion-card-header
             color="secondary"
             class="ion-margin ion-padding inner-radius"

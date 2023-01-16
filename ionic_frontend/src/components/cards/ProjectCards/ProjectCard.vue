@@ -1,8 +1,8 @@
 <template>
-  <ion-row class="ion-padding ion-margin">
+  <ion-row class="">
     <ion-col>
       <ion-card
-        class="ion-padding ion-margin outer-radius no-shadow light-border"
+        class="ion-padding outer-radius no-shadow light-border"
         :id="`${id}-card`"
       >
         <ion-card-header

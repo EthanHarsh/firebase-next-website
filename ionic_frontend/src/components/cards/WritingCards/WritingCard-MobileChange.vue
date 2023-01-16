@@ -1,8 +1,8 @@
 <template>
-  <ion-row class="ion-align-items-start ion-padding ion-margin">
+  <ion-row class="ion-align-items-start">
     <ion-col>
       <ion-card
-        class="ion-padding ion-margin writing-card outer-radius no-shadow light-border animate__animated animate__fadeIn"
+        class="ion-padding writing-card outer-radius no-shadow light-border animate__animated animate__fadeIn"
       >
         <ion-card-header
           color="secondary"
