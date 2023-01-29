@@ -65,7 +65,7 @@ jobs:
               run: |
                 npm run install:frontend
                 npm run install:functions
-                echo "${{ secrets.config }}" > functions/src/app_config.json
+                echo "${{ secrets.CONFIG }}" > functions/src/app_config.json
                 npm run build:functions
                 npm run build:frontend
                 curl -sL https://firebase.tools | bash
