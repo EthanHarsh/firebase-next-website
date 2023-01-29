@@ -1,5 +1,5 @@
 import {OctokitResponse} from "@octokit/types";
-import {GithubCurrentStateOptions} from "./gitHubRepos";
+import {GithubCurrentStateOptions} from "./githubRepos";
 export interface Items {
     id: string,
     link: string,
