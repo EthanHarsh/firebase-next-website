@@ -1,2 +1,2 @@
 # firebase-react-website
-_Coming Soon_😁
+_Coming Soon_ 😁
