@@ -9,6 +9,7 @@
     "target": "es2017",
     "esModuleInterop": true,
     "resolveJsonModule": true,
+    "baseUrl": "src",
   },
   "compileOnSave": true,
   "include": [

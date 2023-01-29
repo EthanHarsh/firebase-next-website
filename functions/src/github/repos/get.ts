@@ -1,5 +1,5 @@
 import octokit from "../config";
-import {GithubCurrentStateOptions, RepoObject} from "../../types";
+import {GithubCurrentStateOptions, RepoObject} from "types";
 
 export const getCurrentRepoState = async (options: GithubCurrentStateOptions) => {
   const {owner, repo, path} = options;

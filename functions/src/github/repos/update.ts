@@ -1,7 +1,7 @@
 import {OctokitResponse} from "@octokit/types";
 import octokit from "../config";
 import {getCurrentRepoState} from "./get";
-import {RssResponse, ErrorResponse, RepoResponse, GithubCurrentStateOptions, UpdateGitHubOptions} from "../../types";
+import {RssResponse, ErrorResponse, RepoResponse, GithubCurrentStateOptions, UpdateGitHubOptions} from "types";
 
 export const updateRepo = async (options: UpdateGitHubOptions) => {
   const {owner, repo, path, message, content, current} = options;
