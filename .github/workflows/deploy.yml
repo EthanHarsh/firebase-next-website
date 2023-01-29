@@ -28,8 +28,6 @@ jobs:
     functions-test:
 
         runs-on: ubuntu-latest
-        needs: [frontend-test, functions-test]
-        if: github.ref == 'refs/heads/main'
 
         strategy:
             matrix:
@@ -48,6 +46,8 @@ jobs:
 
     build-and-deploy:
         runs-on: ubuntu-latest
+        needs: [frontend-test, functions-test]
+        if: github.ref == 'refs/heads/main'
         steps:
             - name: Checkout repository
               uses: actions/checkout@v2
