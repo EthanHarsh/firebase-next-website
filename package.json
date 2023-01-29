@@ -10,7 +10,7 @@
     "install:frontend": "cd ionic_frontend && npm install",
     "test:frontend:unit": "cd ionic_frontend && npm run test:unit",
     "build:functions": "cd functions && npm run build",
-    "build:frontend": "cd ionic_frontend && npm run build",
+    "build:frontend": "cd ionic_frontend && npm run build"
   },
   "repository": {
     "type": "git",
