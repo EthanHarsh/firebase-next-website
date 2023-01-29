@@ -1,4 +1,4 @@
-name: Test
+name: Test, Build, Deploy
 
 on:
     push:
@@ -46,7 +46,7 @@ jobs:
 
     build-and-deploy:
         runs-on: ubuntu-latest
-        # needs: [frontend-test, functions-test]
+        needs: [frontend-test, functions-test]
         if: github.ref == 'refs/heads/main'
 
         strategy:
@@ -64,8 +64,8 @@ jobs:
             - name: Build and Deploy
               run: |
                 npm run install:frontend
+                npm run build:frontend               
                 npm run install:functions
-                npm run build:frontend
                 npm run build:functions
                 curl -sL https://firebase.tools | bash
                 firebase deploy --token ${{ secrets.FIREBASE_TOKEN }}
