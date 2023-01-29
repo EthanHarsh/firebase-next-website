@@ -1,4 +1,4 @@
-name: Test and Deploy
+name: Test
 
 on:
     push:
@@ -43,12 +43,3 @@ jobs:
                   cache: 'npm'
             - run: npm run install:functions
             - run: npm run test:functions
-
-    deploy:
-        runs-on: ubuntu-latest
-        needs: [frontend-test, functions-test]
-        if: github.ref == 'refs/heads/main'
-
-        steps:
-            - name: Fire Webhook
-              run: curl -X POST -d {"message":"Tests completed successfully"} ${{ secrets.WEBHOOK_URL }}
