@@ -44,20 +44,16 @@ jobs:
             - run: npm run install:functions
             - run: npm run test:functions
 
-  build-and-deploy:
-    runs-on: ubuntu-latest
-    steps:
-        - name: Checkout repository
-        uses: actions/checkout@v2
-        - name: Install Dependencies
-          run: |
-            npm run install:frontend
-            npm run install:functions
-        - name: Build Application
-          run: |
-            npm run build:functions
-            npm run build:frontend
-        - name: Deploy to Firebase
-          run: |
-            curl -sL https://firebase.tools | bash
-            firebase deploy --token ${{ secrets.FIREBASE_TOKEN }}
+    build-and-deploy:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout repository
+              uses: actions/checkout@v2
+            - name: Build and Deploy
+              run: |
+                npm run install:frontend
+                npm run install:functions
+                npm run build:functions
+                npm run build:frontend
+                curl -sL https://firebase.tools | bash
+                firebase deploy --token ${{ secrets.FIREBASE_TOKEN }}
