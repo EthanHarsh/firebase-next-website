@@ -66,7 +66,7 @@ jobs:
             - run: npm run build:functions
             - run: npm run build:frontend
             - name: Deploy to Firebase
-              uses: w9jds/firebase-action@main
+              uses: w9jds/firebase-action@master
               with:
                   args: deploy --token ${{ secrets.FIREBASE_TOKEN }}
           
