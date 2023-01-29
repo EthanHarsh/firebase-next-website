@@ -70,5 +70,6 @@ jobs:
         node-version: 14
     - name: Build and Deploy
       run: |
-        npm run build
+        npm run build:functions
+        npm run build:frontend
         firebase deploy --token ${{ secrets.FIREBASE_TOKEN }}
