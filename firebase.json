@@ -20,7 +20,7 @@
     }
   ],
   "hosting": {
-    "public": "ionic_frontend/dist",
+    "public": "next-frontend/out",
     "ignore": [
       "firebase.json",
       "**/.*",

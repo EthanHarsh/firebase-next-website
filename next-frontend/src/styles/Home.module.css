@@ -24,13 +24,14 @@
   transform: translate(41vw, 30vh);
   filter: blur(10px);
   z-index: -1;
+  position: fixed;
 }
 
 .description {
   display: inherit;
   justify-content: inherit;
   align-items: inherit;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   max-width: var(--max-width);
   width: 100%;
   z-index: 2;
@@ -266,7 +267,7 @@
   }
 
   .middleImage {
-    transform: translate(18vw, 19vh);
+    transform: translate(15vw, 25vh);
   }
 
   .mobile {
