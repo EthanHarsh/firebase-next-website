@@ -7,15 +7,33 @@
   min-height: 100vh;
 }
 
+.mobile {
+  display: none;
+}
+
+.desktop {
+  display: inherit;
+}
+
+.middleImage {
+  position: absolute;
+  height: 300px;
+  width: auto;
+  top: 0px;
+  left: 0px;
+  transform: translate(41vw, 30vh);
+  filter: blur(10px);
+  z-index: -1;
+}
+
 .description {
   display: inherit;
   justify-content: inherit;
   align-items: inherit;
-  font-size: 0.85rem;
+  font-size: 1.5rem;
   max-width: var(--max-width);
   width: 100%;
   z-index: 2;
-  font-family: var(--font-mono);
 }
 
 .description a {
@@ -29,7 +47,6 @@
   position: relative;
   margin: 0;
   padding: 1rem;
-  background-color: rgba(var(--callout-rgb), 0.5);
   border: 1px solid rgba(var(--callout-border-rgb), 0.3);
   border-radius: var(--border-radius);
 }
@@ -76,12 +93,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   position: relative;
   padding: 4rem 0;
 }
 
 .center::before {
-  background: var(--secondary-glow);
   border-radius: 50%;
   width: 480px;
   height: 360px;
@@ -89,7 +106,6 @@
 }
 
 .center::after {
-  background: var(--primary-glow);
   width: 240px;
   height: 180px;
   z-index: -1;
@@ -204,11 +220,11 @@
   }
 
   .description {
-    font-size: 0.8rem;
+    font-size: 1.5rem;
   }
 
   .description a {
-    padding: 1rem;
+    display: none;
   }
 
   .description p,
@@ -248,6 +264,14 @@
     );
     z-index: 1;
   }
+
+  .middleImage {
+    transform: translate(18vw, 19vh);
+  }
+
+  .mobile {
+    display: inline;
+  }
 }
 
 /* Tablet and Smaller Desktop */
@@ -255,16 +279,21 @@
   .grid {
     grid-template-columns: repeat(2, 50%);
   }
+  .middleImage {
+    transform: translate(33vw, 23vh);
+  }
 }
 
 @media (prefers-color-scheme: dark) {
   .vercelLogo {
-    filter: invert(1);
+    filter: invert(0);
+    height: 1.5rem;
+    width: auto;
   }
 
   .logo,
   .thirteen img {
-    filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70);
+    filter: invert(0) drop-shadow(0 0 0.3rem #ffffff70);
   }
 }
 
