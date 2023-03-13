@@ -35,7 +35,7 @@ export default function Home() {
               />
           <div>
             <a
-              href="https://billing.stripe.com/p/login/3cs7tI0uBfjogbmaEE"
+              href="https://billing.ethanharsh.com/p/login/3cs7tI0uBfjogbmaEE"
               target="_blank"
               rel="noopener noreferrer"
               className={styles.desktop}
@@ -105,7 +105,7 @@ export default function Home() {
             </p>
           </a>
           <a
-            href="https://billing.stripe.com/p/login/3cs7tI0uBfjogbmaEE"
+            href="https://billing.ethanharsh.com/p/login/3cs7tI0uBfjogbmaEE"
             className={`${styles.card} ${styles.mobile}`}
             target="_blank"
             rel="noopener noreferrer"
