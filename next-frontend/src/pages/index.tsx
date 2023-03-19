@@ -11,7 +11,7 @@ export default function Home() {
     <>
       <Head>
         <title>Ethan Harsh</title>
-        <meta name="description" content="Start a secure and reliable validator node with our expert services - contact me today to learn more." />
+        <meta name="description" content="TypeScript addict crafting elegant solutions" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/background.png" />
       </Head>
@@ -27,7 +27,7 @@ export default function Home() {
         <div className={styles.description}>
             <Image
                 src="/logo_no_background.png"
-                alt="Vercel Logo"
+                alt="Logo"
                 className={styles.vercelLogo}
                 width={100}
                 height={24}
@@ -45,38 +45,11 @@ export default function Home() {
         </div>
 
         <div className={styles.center}>
-          <h1>Power your digital future.</h1>
-          <h2>Start your validator portfolio today.</h2>
+          <h1>TypeScript addict</h1>
+          <h2>crafting elegant solutions</h2>
         </div>
 
         <div className={styles.grid}>
-        <a
-            href="https://github.com/EthanHarsh"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Code <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Building the future of the web. Check out my latest GitHub projects and join the journey.
-            </p>
-          </a>
-
-          <a
-            href="https://www.instagram.com/eharsh4/"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Social <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Step into my world and discover my passions beyond coding on Instagram.
-            </p>
-          </a>
           <a
             href="https://medium.com/@ethanharsh"
             className={styles.card}
@@ -87,10 +60,35 @@ export default function Home() {
               Medium <span>-&gt;</span>
             </h2>
             <p className={inter.className}>
-            Explore the world of React, blockchain, and more.
+              From React to blockchain and beyond - Join me for in-depth discussions and fresh perspectives
             </p>
           </a>
-
+          <a
+            href="https://www.instagram.com/eharsh4/"
+            className={styles.card}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <h2 className={inter.className}>
+              Social <span>-&gt;</span>
+            </h2>
+            <p className={inter.className}>
+              Peek into my life beyond tech on Instagram - Follow me for a taste of my hobbies, interests, and general shenanigans.
+            </p>
+          </a>
+          <a
+            href="https://github.com/EthanHarsh"
+            className={styles.card}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <h2 className={inter.className}>
+              Code <span>-&gt;</span>
+            </h2>
+            <p className={inter.className}>
+              Crafting reliable and scalable solutions on GitHub - Come explore my latest project.
+            </p>
+          </a>
           <a
             href="https://www.linkedin.com/in/ethanharsh/"
             className={styles.card}
