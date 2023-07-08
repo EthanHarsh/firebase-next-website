@@ -45,8 +45,8 @@ export default function Home() {
         </div>
 
         <div className={styles.center}>
-          <h1>TypeScript addict</h1>
-          <h2>crafting elegant solutions</h2>
+          <h1>Developer & Techno Enthusiast</h1>
+          <h2>Crafting code and the occasional beat</h2>
         </div>
 
         <div className={styles.grid}>
