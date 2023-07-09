@@ -68,7 +68,6 @@
   padding: 1rem 1.2rem;
   margin: 1rem;
   border-radius: var(--border-radius);
-  border: 1px solid var(--card-border);
 }
 
 .card span {
