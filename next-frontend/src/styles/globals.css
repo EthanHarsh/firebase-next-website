@@ -1,13 +1,11 @@
 :root {
   --max-width: 1100px;
   --border-radius: 12px;
-  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
-    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
-    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+  --font-mono: "Terminal Mono", monospace;
 
-  --foreground-rgb: #DDF8F8;
-  --background-start-rgb: #DDF8F8;
-  --background-end-rgb: #DDF8F8;
+  --foreground-rgb: #eeffffff;
+  --background-start-rgb: #263238ff;
+  --background-end-rgb: #263238ff;
 
   --primary-glow: #1481BA
   --secondary-glow: #A8730C
@@ -21,67 +19,29 @@
 
   --callout-rgb: 238, 240, 241;
   --callout-border-rgb: 172, 175, 176;
-  --card-rgb: conic-gradient(
-      #1481BA,
-      #373636
-    );
-  --card-border-rgb: 131, 134, 135;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: #DDF8F8;
-    --background-start-rgb: #DDF8F8;
-    --background-end-rgb: #DDF8F8;
-
-    --primary-glow: #1481BA;
-    --secondary-glow: #A8730C
-
-    --tile-start-rgb: 2, 13, 46;
-    --tile-end-rgb: 2, 5, 19;
-    --tile-border: conic-gradient(
-      #ffffff80,
-      #ffffff40,
-      #ffffff30,
-      #ffffff20,
-      #ffffff10,
-      #ffffff10,
-      #ffffff80
-    );
-
-    --callout-rgb: 20, 20, 20;
-    --callout-border-rgb: 108, 108, 108;
-    --card-rgb: 20, 129, 186;
-    --card-border-rgb: 200, 200, 200;
-  }
+  --card: #6766b312;
+  --card-border: #00d482;
 }
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  
+  font-family: "Terminal Mono", monospace !important;
 }
 
 html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
 body {
-  color: #373636;
-  background-color: #FFFFFF;
+  color: #00d482;
+  background-color: #08080c;
 }
 
 a {
   color: inherit;
   text-decoration: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
 }
