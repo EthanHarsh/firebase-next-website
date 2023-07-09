@@ -16,7 +16,7 @@ export default function Home() {
         <link rel="icon" href="/background.png" />
       </Head>
       <Image
-        src="/background.png"
+        src="/background1.png"
         alt="Background Image"
         className={styles.middleImage}
         width={100}
