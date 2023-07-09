@@ -1,12 +1,50 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import { useEffect, useRef } from 'react'
+import { useWindowSize } from 'react-use'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
+import * as THREE from 'three'
 
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+  const canvasRef = useRef(null)
+
+  useEffect(() => {
+    // Create a scene, camera, and renderer
+    const scene = new THREE.Scene()
+    // scene.background = new THREE.Color( 0xff0000 )
+    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000)
+    const renderer = new THREE.WebGLRenderer({ canvas: canvasRef.current as unknown as HTMLCanvasElement, alpha: true })
+    renderer.setClearColor( 0xffffff, 0)
+    renderer.setSize(window.innerWidth, window.innerHeight)
+
+    // Create a sphere
+    const geometry = new THREE.SphereGeometry(2, 32, 32)
+    const material = new THREE.MeshBasicMaterial({ color: '#6766b3', wireframe: true })
+    const sphere = new THREE.Mesh(geometry, material)
+    scene.add(sphere)
+
+    // Position the camera
+    camera.position.z = 5
+
+    // Animation loop
+    function animate() {
+      requestAnimationFrame(animate)
+      sphere.rotation.y -= 0.005
+      renderer.render(scene, camera)
+    }
+    animate()
+
+    // Clean up
+    return () => {
+      scene.remove(sphere)
+      renderer.dispose()
+    }
+  }, [])
+
   return (
     <>
       <Head>
@@ -15,7 +53,9 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/background.png" />
       </Head>
+      
       <main className={styles.main}>
+      <canvas className={styles.globe} ref={canvasRef} />
         <div className={styles.description}>
             <a href='https://medium.com/@ethanharsh' target='_blank'>Ethan Harsh</a>
           <div>
