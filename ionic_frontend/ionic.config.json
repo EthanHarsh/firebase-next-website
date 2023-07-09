@@ -1,7 +1,0 @@
-{
-  "name": "ionic_frontend",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "vue"
-}
