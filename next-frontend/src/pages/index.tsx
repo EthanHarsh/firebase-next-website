@@ -15,24 +15,9 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/background.png" />
       </Head>
-      <Image
-        src="/background1.png"
-        alt="Background Image"
-        className={styles.middleImage}
-        width={100}
-        height={24}
-        priority
-      />
       <main className={styles.main}>
         <div className={styles.description}>
-            <Image
-                src="/logo_no_background.png"
-                alt="Logo"
-                className={styles.vercelLogo}
-                width={100}
-                height={24}
-                priority
-              />
+            <a href='https://medium.com/@ethanharsh' target='_blank'>Ethan Harsh</a>
           <div>
             <a
               href="https://billing.ethanharsh.com/p/login/3cs7tI0uBfjogbmaEE"
